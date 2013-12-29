@@ -30,6 +30,20 @@ while num != 0:
 		print "Résultat Algortihme Floyd-Warshall"
 		print res.affiche()
 
+	def poten(): 
+		
+		print "Matrice de test :"
+		print mpm_cours.affiche()
+
+		res = mpm(mpm_cours)
+
+		print "Résultat MPM"
+		print "Les colonnes représentent les sommets Debut, ..... ,Fin"
+		print "Ligne 1 : les temps au plus tôt "
+		print "Ligne 2 : les temps au plus tard "
+		print "Ligne 3 : les marges libres "
+                print res.affiche()
+                
 	def johnson():
 		print "Matrice de test :"
 		print johnson_cours.affiche()
@@ -73,7 +87,7 @@ while num != 0:
 	algo ={	0 : exit,
 		1 : dyn,
 		2 : floyd,
-		#3 : poten,
+		3 : poten,
 		4 : johnson,
 		5 : ford
 		#6 : branch,
